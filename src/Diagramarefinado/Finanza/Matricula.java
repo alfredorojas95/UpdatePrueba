@@ -1,7 +1,11 @@
 package Diagramarefinado.Finanza;
 
 import org.orm.PersistentException;
-
+/**
+ * 
+ * @author Alfredo
+ *
+ */
 public class Matricula {
 
 	private int estadoMatricula;

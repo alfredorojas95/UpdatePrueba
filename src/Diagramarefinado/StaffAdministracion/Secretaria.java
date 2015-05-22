@@ -3,8 +3,17 @@ package Diagramarefinado.StaffAdministracion;
 import org.orm.PersistentException;
 
 import Diagramarefinado.Persona.*;
-
+/**
+ * 
+ * @author Alfredo
+ *
+ */
 public class Secretaria extends Persona {
+
+	public Secretaria(String nombre, String apellido, String rut) {
+		super(nombre, apellido, rut);
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * Este método permite agregar una nueva secretaria a la base de datos

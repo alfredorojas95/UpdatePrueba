@@ -3,8 +3,17 @@ package Diagramarefinado.StaffAdministracion;
 import org.orm.PersistentException;
 
 import Diagramarefinado.Persona.*;
-
+/**
+ * 
+ * @author Alfredo
+ *
+ */
 public class JefeAdm extends Persona {
+
+	public JefeAdm(String nombre, String apellido, String rut) {
+		super(nombre, apellido, rut);
+		// TODO Auto-generated constructor stub
+	}
 
 	public void ingresarPagoSueldo() {
 		// TODO - implement JefeAdm.ingresarPagoSueldo

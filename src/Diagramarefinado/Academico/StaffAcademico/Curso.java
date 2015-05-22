@@ -1,7 +1,11 @@
 package Diagramarefinado.Academico.StaffAcademico;
 
 import org.orm.PersistentException;
-
+/**
+ * 
+ * @author Alfredo
+ *
+ */
 public class Curso {
 
 	private String nombreCurso;
@@ -35,8 +39,8 @@ public class Curso {
 		// following properties must be initialized before saving :
 		// curso_profesor, estudiante_curso
 		try {
-			String estadoProfesor = "rut='" + rutDirector + "'";
-			orm.Director lormDirector = orm.DirectorDAO.loadDirectorByQuery(estadoProfesor, null);
+			String estadoDirector = "persona.rut='" + rutDirector + "'";
+			orm.Director lormDirector = orm.DirectorDAO.loadDirectorByQuery(estadoDirector, null);
 			/*
 			 * se crea el curso y se le setea el nombre, posteriormente se
 			 * guarda en la base de datos
@@ -75,6 +79,7 @@ public class Curso {
 			String nom = lormCurso.getNombreCurso();
 
 			//verificar que el profesor exista
+	
 			String rutProfesor = "persona.rut='" + rutProfe + "'";
 			orm.Profesor lormProfesor = orm.ProfesorDAO.loadProfesorByQuery(rutProfesor, null);
 			

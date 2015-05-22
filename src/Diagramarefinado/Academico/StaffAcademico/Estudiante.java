@@ -3,18 +3,23 @@ package Diagramarefinado.Academico.StaffAcademico;
 import org.orm.PersistentException;
 
 import Diagramarefinado.Persona.*;
-
+/**
+ * 
+ * @author Alfredo
+ *
+ */
 public class Estudiante extends Persona {
+
+	public Estudiante(String nombre, String apellido, String rut) {
+		super(nombre, apellido, rut);
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * 
 	 * @param nuevaPer
 	 * @param rut
 	 */
-	public void agregarNuevoEstudiante(Persona nuevaPer, String rut) {
-		// TODO - implement Estudiante.agregarNuevoEstudiante
-		throw new UnsupportedOperationException();
-	}
 	
 	/**
 	 * Este método permite agregar un nuevo estudiante a la base de datos
@@ -22,7 +27,7 @@ public class Estudiante extends Persona {
 	 * @param nuevaPer
 	 * @return
 	 */
-	public static String inscribirAlumnos(Persona nuevaPer,String rutSecretaria) {
+	public static String agregarNuevoEstudiante(Persona nuevaPer,String rutSecretaria) {
 		// TODO Initialize the properties of the persistent object here, the
 		// following properties must be initialized before saving : matricula,
 		// estudiante_curso

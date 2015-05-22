@@ -3,8 +3,17 @@ package Diagramarefinado.Academico.StaffAcademico;
 import org.orm.PersistentException;
 
 import Diagramarefinado.Persona.*;
-
+/**
+ * 
+ * @author Alfredo
+ *
+ */
 public class Profesor extends Persona {
+
+	public Profesor(String nombre, String apellido, String rut) {
+		super(nombre, apellido, rut);
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * este método permite agregar un nuevo profesor a la base de datos
